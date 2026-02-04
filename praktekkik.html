@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Kue Ibu Asha</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+
+      /* ini bikin footer selalu di bawah */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: pink;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .container {
+      flex: 1; /* penting untuk dorong footer ke bawah */
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 15px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: pink;
+      margin-bottom: 15px;
+    }
+
+    .btn-wa {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 8px 15px;
+      margin-bottom: 15px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .btn-wa:hover {
+      background: #1ebe5d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: white;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Menu Kue Ibu Asha</h1>
+  <p>Langsung Beli Dijamin Enak</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <img src="kue.jpg" alt="Kue Ulang Tahun">
+    <h3>Kue Ulang Tahun</h3>
+    <p>Ukuran 16 dan 22</p>
+    <div class="price">Rp 100.000 - Rp 150.000</div>
+    <a class="btn-wa" href="https://wa.me/6285724732319?text=Halo%20Ibu%20Asha,%20saya%20ingin%20pesan%20Kue%20Ulang%20Tahun" target="_blank">
+      Pesan via WhatsApp
+    </a>
+  </div>
+
+  <div class="card">
+    <img src="kering.jpg" alt="Kue Kering">
+    <h3>Kue Kering</h3>
+    <p>Banyak variasi</p>
+    <div class="price">Rp 40.000 - Rp 60.000</div>
+    <a class="btn-wa" href="https://wa.me/6285724732319?text=Halo%20Ibu%20Asha,%20saya%20ingin%20pesan%20Kue%20Kering" target="_blank">
+      Pesan via WhatsApp
+    </a>
+  </div>
+
+  <div class="card">
+    <img src="brownis.jpg" alt="Brownis">
+    <h3>Brownis</h3>
+    <p>Bisa Request</p>
+    <div class="price">Rp 50.000 - Rp 80.000</div>
+    <a class="btn-wa" href="https://wa.me/6285724732319?text=Halo%20Ibu%20Asha,%20saya%20ingin%20pesan%20Brownis" target="_blank">
+      Pesan via WhatsApp
+    </a>
+  </div>
+
+  <div class="card">
+    <img src="pie.jpg" alt="Pie">
+    <h3>Pie</h3>
+    <p>Bisa Request isian</p>
+    <div class="price">Rp 50.000</div>
+    <a class="btn-wa" href="https://wa.me/6285724732319?text=Halo%20Ibu%20Asha,%20saya%20ingin%20pesan%20Pie" target="_blank">
+      Pesan via WhatsApp
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  © By Dava Arisky
+</footer>
+
+</body>
+</html>
